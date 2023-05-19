@@ -1,0 +1,292 @@
+/* Set the default font family and remove margins and padding from the body */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #3a3a3a;
+}
+
+/* Style the header with a dark background color and white text */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center the heading and increase the font size */
+h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 3em;
+}
+
+/* Style the table with a light background color and a box shadow */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #393939;
+  width: 80%;
+  max-width: 1200px;
+  animation: fadeIn 0.5s ease-in-out;
+  overflow: hidden;
+  border-radius: 5px;
+  color: rgb(188, 188, 188)
+
+}
+
+/* Set the border and padding for table cells and center the text */
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the table header with a light gray background color */
+thead {
+  background-color: #4b4b4b;
+}
+
+/* Style the "Create Einsatz" button */
+#einsatz-erstellen {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #67ff9f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: fadeIn 1.0s ease-in-out;
+}
+
+/* Change the background color of the buttons when hovered over */
+#einsatz-erstellen:hover {
+  background-color: #3e8e41;
+}
+
+/* Use media queries to adjust the layout for smaller screens */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  table {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes expandTable {
+  from {
+    height: 0;
+  }
+  to {
+    height: auto;
+  }
+}
+
+/* Style den "Einsatz erstellen"-Button */
+#einsatz-erstellen {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+/* Füge die Animation zur Tabelle hinzu */
+@keyframes fadeInTable {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Weise die Animation der Tabelle zu */
+table {
+  animation: fadeInTable 3.0s ease-in-out;
+}
+
+/* Füge die Animation zur Zeile hinzu */
+@keyframes fadeInRow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Weise die Animation der Zeile zu */
+tr.fade-in {
+  animation: fadeInRow 0.5s ease-in-out;
+}
+
+
+.watermark {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 24px;
+			color: #ffffff66;
+			pointer-events: none;
+			z-index: 9999;
+			font-family:monospace
+		}
+
+.watermarkheart {
+			position: fixed;
+			top: 55%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 100px;
+			color: rgba(255, 0, 0, 0.575);
+			pointer-events: none;
+			z-index: 9999;
+		}
+
+
+    .info {
+      position: fixed;
+      left: 50%;
+      top:  80%;
+      z-index: 9999;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: #ffffff66;
+    }
+
+    .version {
+      position: fixed;
+      left: 50%;
+      top:  85%;
+      z-index: 9999;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: #ffffff66;
+    }
+
+
+    .sidebar {
+      background-color: #333;
+      color: #fff;
+      width: 250px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      transition: transform 0.3s ease-in-out;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+      overflow-y: auto;
+      padding-bottom: 20px;
+    }
+    
+    .sidebar-menu {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+    
+    .sidebar-menu li {
+      padding: 10px;
+      transition: background-color 0.3s ease-in-out;
+    }
+    
+    .sidebar-menu li:hover {
+      background-color: #818181;
+    }
+    
+    .sidebar-menu li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+      padding: 15px;
+      font-size: 18px;
+    }
+    
+    .sidebar-menu li a i {
+      margin-right: 10px;
+    }
+    
+    .sidebar.open {
+      transform: translateX(0);
+    }
+    
+    .sidebar.closed {
+      transform: translateX(-200px);
+    }
+    
+    .menu-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      font-size: 24px;
+      color: #fff;
+      cursor: pointer;
+      transition: opacity 0.3s ease-in-out;
+      z-index: 9999;
+      animation: pulse 1s infinite;
+    }
+    
+    .menu-toggle:hover {
+      opacity: 0.7;
+    }
+
+    /* Füge die Animation für den Button hinzu */
+@keyframes btnFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
