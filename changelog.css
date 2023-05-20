@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #333333;
+    color: #acacac;
+}
+  
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+header {
+    background-color: #333;
+    color: #7d7d7d;
+    padding: 20px;
+    text-align: center;
+}
+  
+h1 {
+    font-size: 32px; /* Größere Überschrift */
+    margin-bottom: 10px; /* Platz unter der Überschrift */
+}
+  
+h2 {
+    font-size: 24px; /* Größere Überschrift */
+    margin-top: 20px;
+    margin-bottom: 10px; /* Platz unter der Überschrift */
+}
+  
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+li {
+    margin-bottom: 10px;
+}
+  
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+a:hover {
+    color: #555;
+}
+  
+/* Animation */
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+  
+.fadein-container {
+    animation: fadein 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Stichpunkte */
+ul.stichpunkte {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  ul.stichpunkte li {
+    margin-bottom: 5px;
+  }
+
+
+  .sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    overflow-y: auto;
+    padding-bottom: 20px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .sidebar-menu li {
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .sidebar-menu li:hover {
+    background-color: #818181;
+  }
+  
+  .sidebar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    padding: 15px;
+    font-size: 18px;
+  }
+  
+  .sidebar-menu li a i {
+    margin-right: 10px;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar.closed {
+    transform: translateX(-200px);
+  }
+  
+  .menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 9999;
+    animation: pulse 1s infinite;
+  }
+  
+  .menu-toggle:hover {
+    opacity: 0.7;
+  }
+
+  /* Füge die Animation für den Button hinzu */
+@keyframes btnFadeIn {
+from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}

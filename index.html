@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Leitstelle V 0.5 Beta</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+	<header>
+		<h1>ADAC Luftrettung</h1>
+	</header>
+	<aside class="sidebar">
+		<ul class="sidebar-menu">
+			<li><a href="changelog.html" class="btn-animate"><i class="fas fa-history"></i> Changelog</a></li>
+			<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdj13ALl0qkSIsLSfWx7DIKHu82BCGEFbR_8HISUbzfN4Lvrg/viewform?usp=share_link" target="_blank" class="btn-animate"><i class="fas fa-comments"></i> Feedback</a></li>
+			<button id="alle-loeschen"><i class="fas fa-trash"></i> Alle Löschen</button>
+		</ul>
+	</aside>
+	
+	<main>
+		<div class="table-container">
+			<table id="einsaetze">
+				<thead>
+					<tr>
+						<th>Datum</th>
+						<th>Abflugzeit</th>
+						<th>Adresse</th>
+						<th>Zielstation</th>
+						<th>Aktionen</th> <!-- Neue Spalte für Aktionen -->
+					</tr>
+				</thead>
+				 <tbody>
+					 <!-- Hier werden die Einsätze eingefügt -->
+				 </tbody>
+			</table>			
+		</div>
+		<button id="einsatz-erstellen">Einsatz erstellen</button>
+		<div class="watermark">DEVELOPED BY LIAM WITH</div>
+		<div class="watermarkheart">♥️</div>
+		<p class="info">Some addresses may be incorrect, but this will be fixed in later patches! Found some Bugs🪲? Let me know via the Feedback Button!</p>
+		<p class="version">May 21 Version</p>
+	</main>
+	
+	<script src="script.js"></script>
+</body>
+</html>
